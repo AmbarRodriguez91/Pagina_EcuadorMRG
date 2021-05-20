@@ -1,0 +1,37 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col" [style.color]="colorTexto">
+      <h2>¿Quieres saber un poco más de cada Región del Ecuador?</h2>
+      <br>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-3 col-lg-3">
+      <button type="button" class="btn btn-primary" (click)="pulsadoCosta($event)">Región Costa </button>
+      <div [hidden]="escondidoCosta" [style.color]="colorTexto">
+        {{getInfoCosta()}}
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3">
+      <button type="button" class="btn btn-primary" (click)="pulsadoSierra($event)">Región Sierra</button>
+      <div [hidden]="escondidoSierra" [style.color]="colorTexto">
+        {{getInfoSierra()}}
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3">
+      <button type="button" class="btn btn-primary" (click)="pulsadoAmazonia($event)">Región Amazónica </button>
+      <div [hidden]="escondidoAmazonia" [style.color]="colorTexto">
+      {{getInfoAmazonia()}}
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3">
+      <button type="button" class="btn btn-primary" (click)="pulsadoInsular(($event))">Región Insular</button>
+      <div [hidden]="escondidoInsular" [style.color]="colorTexto">
+        {{getInfoInsular()}}
+      </div>
+    </div>
+  </div>
+</div>
