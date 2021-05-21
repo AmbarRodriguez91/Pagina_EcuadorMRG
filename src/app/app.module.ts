@@ -5,16 +5,24 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 import { InfoRegionesComponent } from './info-regiones/info-regiones.component';
+import { CarruselComponent } from './carrusel/carrusel.component';
+import { MenuComponent } from './menu/menu.component';
+import { FooterComponent } from './footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InfoRegionesComponent
+    InfoRegionesComponent,
+    CarruselComponent,
+    MenuComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatMenuModule
+    MatMenuModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
