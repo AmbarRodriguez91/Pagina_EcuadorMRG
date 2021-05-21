@@ -1,0 +1,11 @@
+<ngb-carousel>
+  <ng-template *ngFor="let regiones of Regiones" ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="{{regiones.img}}" class="d-block w-100"  alt="">
+    </div>
+    <div class="carousel-caption" [style.color]="propertyBinding" >
+      <h3>{{regiones.name}} {{interpolationBinding}} </h3>
+      <p>{{regiones.desc}}</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
