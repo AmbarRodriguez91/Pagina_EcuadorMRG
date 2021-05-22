@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormularioComponent } from './formulario/formulario.component';
 import { NoticiasComponent } from './noticias/noticias.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,12 +23,13 @@ import { NoticiasComponent } from './noticias/noticias.component';
     FormularioComponent,
     NoticiasComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatMenuModule,
-    NgbModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatMenuModule,
+        NgbModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

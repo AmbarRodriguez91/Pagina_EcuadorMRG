@@ -6,26 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carrusel.component.css']
 })
 export class CarruselComponent implements OnInit {
-  propertyBinding = 'beige';
-  interpolationBinding = '';
-  Regiones: any[] = [
-    {name: 'Sierra',
-      img: 'assets/sierra.webp',
-      desc: 'Recorre los hermosos paisajes de la Sierra',
-    },
-    {name: 'Costa',
-      img: 'assets/costa.jpg',
-      desc: 'La mejor experiencia que puedes tener'
-    },
-    {name: 'Oriente',
-      img: 'assets/oriente.jpg',
-      desc: 'La aventura te espera'
-    },
-    {name: 'Galapagos',
-      img: 'assets/galapagos.jpg',
-      desc: 'Una mágica travesía te espera'
-    }
-  ];
+  propertyBinding = 'white';
+  FontSize = '60';
   constructor() {
   }
 
