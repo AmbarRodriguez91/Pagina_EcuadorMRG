@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioComponent implements OnInit {
 
+  interpolationBinding = 'Suscríbete Aquí';
+  propertyBinding = 'blue';
   constructor() { }
 
   ngOnInit(): void {
