@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  FontSize = '50';
+  fontsize = '50';
   color = 'gray';
-  escondidoEcuador = true;
-  conoceEcuador = 'Ecuador es un país con muchos lugares fantásticos que te invitamos a conocer.';
+  ocultarEcuador = true;
+  conoceEcuador = 'Ecuador es un país con muchos lugares fantásticos ¡Que esperas para conocerlos!.';
   constructor() { }
 
   ngOnInit(): void {
@@ -18,7 +18,7 @@ export class MenuComponent implements OnInit {
       return this.conoceEcuador;
     }
     Ecuador($event): any{
-      this.escondidoEcuador = !this.escondidoEcuador;
+      this.ocultarEcuador = !this.ocultarEcuador;
   }
 
 }

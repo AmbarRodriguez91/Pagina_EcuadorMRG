@@ -1,8 +1,8 @@
 <nav class="container">
   <nav class="navbar fixed-center navbar-expand-lg navbar-light align-content-lg-center ">
     <div class="container-fluid">
-    <a [style.color]="color" [style.font-size.px]="FontSize" (click)="Ecuador($event)">Conoce Ecuador </a>
-      <div [hidden]="escondidoEcuador" >
+    <a [ngStyle]="{'color': 'gray', 'font-size': '55px'}" (click)="Ecuador($event) ">Conoce Ecuador </a>
+      <div [hidden]="ocultarEcuador" >
         {{getConoceEcuador()}}
         </div>
     </div>

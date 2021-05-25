@@ -4,28 +4,28 @@
       <img src="assets/sierra.jpeg" class="d-block w-100" alt="">
       <div class="carousel-caption d-none d-md-block">
         <h1 [style.color]="propertyBinding" [style.font-size.px]="FontSize">Sierra</h1>
-        <p [style.color]="propertyBinding">Recorre sus hermosos paisajes</p>
+        <p [style.color]="propertyBinding" *ngFor="let item of fraseSierra">{{item.frase}}</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="10000">
       <img src="assets/COSTA%20PNG.png" class="d-block w-100" alt="">
       <div class="carousel-caption d-none d-md-block">
         <h1 [style.color]="propertyBinding" [style.font-size.px]="FontSize">Costa</h1>
-        <p [style.color]="propertyBinding">Una experiencia única</p>
+        <p [style.color]="propertyBinding" *ngFor="let item of fraseCosta">{{item.frase}}</p>
         </div>
     </div>
     <div class="carousel-item" data-bs-interval="10000">
       <img src="assets/ORIENTEPNG.png" class="d-block w-100" alt="">
       <div class="carousel-caption d-none d-md-block">
-        <h1 [style.color]="propertyBinding" [style.font-size.px]="FontSize">Oriente</h1>
-        <p [style.color]="propertyBinding">La aventura de tu vida</p>
+        <h1 [style.color]="propertyBinding" [style.font-size.px]="FontSize">Amazonía</h1>
+        <p [style.color]="propertyBinding" *ngFor="let item of fraseOriente">{{item.frase}}</p>
       </div>
     </div>
   <div class="carousel-item" data-bs-interval="10000">
     <img src="assets/galapagos.jpeg" class="d-block w-100" alt="">
     <div class="carousel-caption d-none d-md-block">
       <h1 [style.color]="propertyBinding" [style.font-size.px]="FontSize">Galápagos</h1>
-      <p [style.color]="propertyBinding">Una mágica experiencia que nunca olvidarás</p>
+      <p [style.color]="propertyBinding" *ngFor="let item of fraseGalapagos">{{item.frase}}</p>
     </div>
   </div>
   </div>
